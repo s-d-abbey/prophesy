@@ -1,0 +1,112 @@
+:root {
+  --primary-color: white;
+  --icon-color: #8A8A8A;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: white;
+  position: relative;
+}
+
+.landingpage {
+  height: 90vh;
+  position: relative;
+  box-sizing: border-box;
+}
+.landingpage .topnav {
+  width: 100%;
+  border: 1px solid red;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.landingpage .topnav .left {
+  width: 50%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.landingpage .topnav .left .nav-trigger a {
+  text-decoration: none;
+}
+.landingpage .topnav .left .nav-trigger a i.bx {
+  font-size: 2.5rem;
+  color: white;
+}
+.landingpage .topnav .left select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #1E1E1E;
+  color: white;
+  outline: none;
+  border: none;
+  width: 60%;
+  display: flex;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.landingpage .topnav .left select option {
+  display: flex;
+  padding: 0;
+  outline: none;
+  border: none;
+  align-items: center;
+}
+.landingpage .topnav .right {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid white;
+}
+.landingpage .topnav .right .search-trigger i.bx {
+  color: white;
+}
+
+nav {
+  height: 9.5vh;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+nav .nav-content {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.219);
+  border: 1px solid red;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav .nav-content a {
+  text-decoration: none;
+  color: var(--icon-color);
+}
+nav .nav-content a i.bx {
+  font-size: 2rem;
+}
+nav .nav-content a .bx-plus {
+  font-size: 2.5rem !important;
+}
+nav .nav-content a.active {
+  color: var(--primary-color);
+}/*# sourceMappingURL=homepage.css.map */

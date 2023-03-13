@@ -1,0 +1,163 @@
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: white;
+}
+
+.preloader-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #ee7752, #0d3569, #000000, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+.preloader-container .preloader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 0.08cm;
+}
+.preloader-container .preloader-content .loader {
+  width: 6rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+.preloader-container .preloader-content .loader i.bx {
+  font-size: 2em;
+  padding: 0.5rem;
+  animation: spin 5s linear infinite reverse;
+  position: absolute;
+}
+.preloader-container .preloader-content .loader i.bx:nth-child(1) {
+  -webkit-animation: loader1 2s linear forwards;
+          animation: loader1 2s linear forwards;
+}
+.preloader-container .preloader-content .loader i.bx:nth-child(2) {
+  -webkit-animation: loader2 2s linear forwards;
+          animation: loader2 2s linear forwards;
+}
+.preloader-container .preloader-content .loader i.bx:nth-child(3) {
+  -webkit-animation: loader3 2s linear forwards;
+          animation: loader3 2s linear forwards;
+}
+.preloader-container .preloader-content .logo-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preloader-container .preloader-content .logo-container img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10px;
+  -webkit-animation: hidelogo 1s 0.5s forwards;
+          animation: hidelogo 1s 0.5s forwards;
+  margin-bottom: 15%;
+}
+
+@-webkit-keyframes hidelogo {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hidelogo {
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader1 {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-30%);
+  }
+}
+@keyframes loader1 {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-30%);
+  }
+}
+@-webkit-keyframes loader2 {
+  100% {
+    left: 4%;
+    transform: translateY(35%);
+  }
+}
+@keyframes loader2 {
+  100% {
+    left: 4%;
+    transform: translateY(35%);
+  }
+}
+@-webkit-keyframes loader3 {
+  100% {
+    transform: translateY(35%);
+    right: 4%;
+  }
+}
+@keyframes loader3 {
+  100% {
+    transform: translateY(35%);
+    right: 4%;
+  }
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}/*# sourceMappingURL=preloader.css.map */
